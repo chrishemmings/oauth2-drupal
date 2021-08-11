@@ -27,7 +27,7 @@ class Drupal extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return $this->getBaseUrl() . '/oauth2/authorize';
+        return $this->getBaseUrl() . '/oauth/authorize';
     }
 
     /**
@@ -38,7 +38,7 @@ class Drupal extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return $this->getBaseUrl() . '/oauth2/token';
+        return $this->getBaseUrl() . '/oauth/token';
     }
 
     /**
@@ -49,7 +49,7 @@ class Drupal extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return $this->getBaseUrl() . '/oauth2/UserInfo';
+        return $this->getBaseUrl() . '/oauth/UserInfo';
     }
 
     /**
